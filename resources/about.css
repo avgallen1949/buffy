@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  @font-face {
+    font-family: "Kadabra";
+    src: url(./DuctusMonoRegular.woff2);
+  }
+
+  body {
+    overflow: hidden;
+  }
+  
+  img {
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  img:hover {
+    position: fixed;
+  }
+  
+  @media (max-width: 768px) {
+    img {
+      width: 150px;
+    }
+  }
+  
+  html {
+    background-color: rgb(249, 44, 44);
+    color: black;
+    animation: color 15s infinite;
+    font-family: "Space Mono", monospace;
+    overflow: scroll;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(122, 228, 255)
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  #title {
+    position: fixed;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 22rem;
+    line-height: 3rem;
+  }
+  
+  h1 {
+    font-family: "Kadabra";
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 14rem;
+  }
+  
+p {
+    color: black;
+    width: 50%;
+    margin: auto;
+}

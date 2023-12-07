@@ -1,0 +1,126 @@
+html {
+    background-color: black;
+    color: white;
+    text-transform: lowercase;
+}
+
+body {
+    font-family: "Major Mono Display", monospace;
+  }
+
+title:hover {
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: .2rem;
+    text-align: center;
+}
+
+.title {
+  line-height: 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#smaller {
+    font-size: 1rem;
+}
+  
+  .filterDiv {
+    float: left;
+    color: #ffffff;
+    text-align: left;
+    margin: 2px;
+    display: none; /* Hidden by default */
+    padding: 1rem;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+.left {
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 1rem;
+    height: 50rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+  align-items: baseline;
+}
+
+.btn {
+  background: black;
+  color: white;
+  font-family: "Major Mono Display", monospace;
+  padding: 1rem;
+  margin: .5rem;
+  border: 1px solid white;
+  border-radius: 5rem;
+  text-transform: lowercase;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+  transform: rotate(-5deg);
+}
+
+.btn: :active {
+  background: white;
+  color: black;
+}
+
+.bold {
+  font-size: 1.3rem;
+}
+
+img {
+  height: auto;
+  width: 17rem;
+  margin: auto;
+}
+
+a h4, a p {
+  display: none;
+}
+
+.right div {
+  border-bottom: 3px white solid;
+}
+
+
+
+
+/*
+a h4 {
+  display: none;
+}
+a:hover h4 {
+position:absolute;
+  display: block;
+  left:0;
+}
+
+a:hover p, a:hover h4, a:hover img {
+  display:grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+a:hover img {
+  padding-bottom: 1rem;
+}
+*/

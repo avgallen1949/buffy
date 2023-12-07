@@ -1,0 +1,51 @@
+html {
+    font-family: "Major Mono Display", monospace;
+    font-size: 14px;
+    background: black;
+    color: white;
+}
+
+#title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    align-items: center;
+    align-content: center;
+    margin: 3rem;
+    justify-items: center;
+    margin-top: 12rem;
+}
+
+.child {
+    height: 20rem;
+    z-index: 1;
+    display: relative;
+    top: 0;
+    left: 0;
+}
+
+.parent {
+    display: absolute;
+    background-color: palegreen;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    z-index: 0;
+}
+
+.grid div:hover {
+    transform: rotate(-20deg);
+}
+
+#buffy {
+    text-align: center;
+}

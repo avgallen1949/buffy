@@ -37,8 +37,16 @@ button:hover {
     color: black;
     cursor: pointer;
 }
+
+.bottom {
+  margin-bottom: 2rem;
+}
+
+.top {
+  margin-top: 2rem;
+}
   
-  header{
+  header {
   /*  padding: 1em;*/
     width: 100%;
     text-align: center;

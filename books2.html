@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+
+    <title>Avrie's Library</title>
+    
+    <link rel="stylesheet" href="./books resources/books2.css" type="text/css" />
+  </head>
+  <body>
+
+    <div class="left container">
+    <h1>Avrie's Library<br><br><span id="smaller">(what i'm reading, what i've read and been inspired by)</span></h1>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('feminism')"> Feminism</button>
+        <button class="btn" onclick="filterSelection('technology')"> Technology</button>
+        <button class="btn" onclick="filterSelection('art')"> Art</button>
+        <button class="btn" onclick="filterSelection('politics')"> Politics</button>
+        <button class="btn" onclick="filterSelection('reading')"> Currently Reading</button>
+      </div>
+
+      <div class="right">
+
+
+        <a href="https://mitpress.mit.edu/9780262544887/autotheory-as-feminist-practice-in-art-writing-and-criticism/" target="_blank"><div class="filterDiv politics art reading feminism">
+          <img src="./books resources/9780262544887.avif">  
+          <h4 class="title bold">Autotheory as Feminist Practice in Art, Writing, and Criticism</h4>
+            <p class="author">by Lauren Fornier</p></a>
+        </div>
+
+        <a href="https://vincentbevins.com/book2/" target="_blank" id="bevins"><div class="filterDiv politics reading">
+          <img id="burn" src="./books resources/IfWeBurn_12e.webp">
+        <h4 class="title"><span class="bold">If We Burn</span> <br> The Mass Protest Decade and the Missing Revolution</h4>
+        <p class="author">by Vincent Bevens</p></a>
+        </div>
+
+        <a href="https://www.akpress.org/nightvision.html" target="_blank"><div class="filterDiv politics feminism">
+          <img src="./books resources/nightvision2_72.jpg">
+          <h4 class="title"><span class="bold">Night-Vision</span> <br>Illuminating War and Class on the Neo-Colonial Terrain</h4>
+          <p class="author">by Butch Lee (RIP)</p></a>
+      </div>
+
+         <a class="link" href="https://www.jamesbridle.com/books/ways-of-being" target="_blank"><div class="filterDiv politics art technology">
+          <img src="./books resources/ways_of_being_us_hb_small.jpg">
+            <h4 class="title"><span class="bold">Ways of Being</span> <br> Animals, Plants, Machines: The search for a planetary intelligence</h4>
+            <p class="author">by James Bridle</p></a>
+         </div>
+
+         <a href="https://www.dropbox.com/s/n41yd0o70hn1qkl/WIQT1.pdf?dl=0" target="_blank"><div class="filterDiv politics art">
+          <img src="./books resources/d32Fi2OQ.png">
+            <h4 class="title"><span class="bold">What is Queer typography?</span></h4>
+            <p class="author">by Paul Soulellis</p></a>
+        </div>
+
+        <a href="https://www.themarginalian.org/2015/05/19/adrienne-rich-arts-of-the-possible-capitalism/"><div class="filterDiv politics art feminism">
+          <img src="./books resources/adriennerich_artsofthepossible.webp">
+          <h4 class="title"><span class="bold">Arts of the Possible</span><br>Essays and Conversations</h4>
+          <p class="author">by Adrienne Rich</p></a>
+        </div>
+
+        <a href="https://www.versobooks.com/products/664-constituting-feminist-subjects"><div class="filterDiv politics feminism">
+          <img src="./books resources/getimage_40cfa6dd-cadd-4df7-8773-940f9c8fca85.webp">
+          <h4 class="title"><span class="bold">Constituting Feminist Subjects</span></h4>
+          <p class="author">by Kathi Weeks</p></a>
+      </div>
+      
+            <a href="https://www.bloomsbury.com/us/patriarchy-and-accumulation-on-a-world-scale-9781350348189/" target="_blank"><div class="filterDiv politics feminism">
+              <img src="./books resources/9781350348189.jpg">
+            <h4 class="title"><span class="bold">Patriarchy and Accumulation on a World Scale</span> <br>Women in the International Division of Labor</h4>
+            <p class="author">by Maria Mies</p></a>
+            </div>
+
+            <a href="https://files.libcom.org/files/assataauto.pdf" target="_blank"><div class="filterDiv politics feminism">
+              <img src="./books resources/9781556520747_p0_v2_s550x406-3467867473.jpg">
+              <h4 class="title"><span class="bold">Assata</span> <br> an Autobiography</h4>
+              <p class="author">by Assata Shakur</p></a>
+          </div>
+
+            <a href="https://www.redstarpublishers.org/CulturalColdWar.pdf" target="_blank"><div class="filterDiv politics art">
+              <img src="./books resources/1587790244-1753745714.jpg">
+                <h4 class="title"><span class="bold">The Cultural Cold War</span> <br> The CIA and the World of Arts and Letters</h4>
+                <p class="author">by Frances Stonor Saunders</p></a>
+            </div>
+
+            <a href="https://www.akpress.org/lumpenedmead.html"><div class="filterDiv politics feminism">
+              <img src="./books resources/lumpen_72_1.jpg">
+              <h4 class="title"><span class="bold">Lumpen</span><br>the autobiography of Ed Mead</h4>
+              <p class="author">by Ed Mead</p></a>
+          </div>
+
+            <a href="https://onpublishing.page/" target="_blank"><div class="filterDiv art">
+              <img src="./books resources/Screenshot 2023-11-07 at 11.05.28 PM.png">
+                <h4 class="title"><span class="bold">On Publishing</span> <br>graphic designers who publish</h4>
+                <p class="author">by ???</p></a>
+            </div>
+
+            <a href="https://archive.org/details/CalibanAndTheWitchWomenTheBodyAndPrimitiveAccumulation" target="_blank"><div class="filterDiv politics feminism">
+              <img src="./books resources/s-f-silvia-federici-caliban-and-the-witch-1-3731014851.jpg">
+              <h4 class="title"><span class="bold">Caliban and the Witch</span> <br> Women, the Body, and Primitive Accumulation</h4>
+              <p class="author">by Silvia Federici</p></a>
+          </div>
+          
+      <a href="https://cyberfeminismindex.com/" target="_blank"><div class="filterDiv art feminism">
+            <img src="./books resources/cyber.jpg">
+            <h4 class="title"><span class="bold">Cyberfeminism Index</span></h4>
+            <p class="author">compiled by Mindy Seu</p></a>
+        </div>
+
+          <a href="https://www.revolutionbooks.org/book/9781583671801" target="_blank"><div class="filterDiv politics">
+            <img src="./books resources/9781583671801.jpg">
+            <h4 class="title"><span class="bold">The Unknown Cultural Revolution</span></h4>
+            <p class="author">by Dongping Han</p></a>
+        </div>
+
+    <a href="https://soulellis.com/writing/post-documenta/index.html"><div class="filterDiv politics feminism">
+      <img src="./books resources/Screenshot 2023-11-07 at 10.52.30 PM.png">
+      <h4 class="title"><span class="bold">Urgentcraft</span><br>RADICAL PUBLISHING DURING CRISIS</h4>
+      <p class="author">by Paul Soulellis</p></a>
+  </div>
+
+    <a href="https://www.worldcat.org/title/The-shameful-peace-:-how-French-artists-and-intellectuals-survived-the-Nazi-occupation/oclc/216936069"><div class="filterDiv politics art">
+      <img src="./books resources/rvaoa1ftou0pqkz73tyexv43oqt1.jpeg">
+      <h4 class="title"><span class="bold">The Shameful Peace</span><br>How French Artists and Intellectuals Survived the Nazi Occupation</h4>
+      <p class="author">by Frederic Spotts</p></a>
+  </div>
+
+  <a href="https://www.harpercollins.com/products/zeros-and-ones-digital-women-and-the-new-technoculture-sadie-plant?variant=32173198573602"><div class="filterDiv politics technology feminism">
+    <img src="./books resources/9781857026986_b0f3d995-1975-4491-8c39-e24cc63aa75d.webp">
+    <h4 class="title"><span class="bold">Zeros and Ones</span><br>Digital Women and the New Technoculture</h4>
+    <p class="author">by Sadie Plant</p></a>
+</div>
+
+<a href="https://uncpress.org/book/9781469652221/no-mercy-here/"><div class="filterDiv politics feminism">
+  <img src="./books resources/9781469652221.avif">
+  <h4 class="title"><span class="bold">No Mercy Here</span> <br> Gender, Punishment, and the Making of Jim Crow Modernity</h4>
+  <p class="author">by Sarah Haley</p></a>
+</div>
+    
+    
+    
+    <script>
+        filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+    </script>
+  </body>
+</html>
+
+

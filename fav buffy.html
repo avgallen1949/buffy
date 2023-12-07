@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buffy Moments</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./fav buffy resources/buffy.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    
+    <header>
+
+      <h1 class="top">Favorite Moments from Buffy the Vampire Slayer</h1>
+    </header>
+    
+    
+    <!-- Use this to filter the clouds you can see -->
+    <div class="bottom" id="filter">
+      <a href="https://forms.gle/nGhrzjcog3yegrebA" target="_blank"><button id="submit">Submit a Moment</button></a>
+      <br>
+      <button filter="all">Show All</button>
+      <button filter="1">Season 1</button>
+      <button filter="2">Season 2</button>
+      <button filter="3">Season 3</button>
+      <button filter="4">Season 4</button>
+      <button filter="5">Season 5</button>
+      <button filter="6">Season 6</button>
+      <button filter="7">Season 7</button>
+    </div>
+    
+    <!--  Clouds are dumped here -->
+    <div id="clouds">
+    
+    </div>
+    
+    <!--  This appears when you click on a cloud  -->
+    
+    <div id="look">
+      <div class="wrapper">
+        <div class="cloud">
+    <span class="emoji"></span>
+    <p></p>
+    <button hide>Back</button>
+        </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="code.js" type="text/javascript"></script>
+  </body>
+
+  <script>
+
+// gets a random integer between the min and max
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+
+var SPREADSHEET_ID_AND_TAB = "1no2JdE4BC9Sh5yj6VeH0jUQQhiGaUPtAKplvKW0RLwo/Sheet1";
+
+
+$(document).ready(function () {
+  
+  
+  $.getJSON("https://opensheet.elk.sh/" + SPREADSHEET_ID_AND_TAB, function (data) {
+    
+    data.forEach(function (row, index) {
+      
+      if(index == 0) return;
+      
+      let div = $(`<div class='cloud' type='` + row.type +`' index="` + index +`">
+        <span class='emoji'>` + row.cloud +`</span>
+        <p>` +  row.msg + `</p>
+        </div>`)
+      .attr("title", row.msg)
+      .css("top", getRandomInt(0, 80) + "%")
+      .css("left", getRandomInt(0, 90) + "%")
+      .appendTo("#clouds");
+  
+    });
+  });  
+});
+  
+
+// Filter
+
+$("#filter").on("click", "button[filter]", function(){
+  
+  $("#filter button[filter]").css("opacity", 0.3);
+  $(this).css("opacity", 1);
+  
+  let to_filter = $(this).attr("filter");
+  console.log(to_filter);
+  
+  if(to_filter == "all"){
+    $("#clouds .cloud").show();
+    return;
+  }
+  
+    $("#clouds .cloud").hide();
+    $("#clouds .cloud[type='" + to_filter +"']").show();
+});
+
+
+// Look at cloud
+$("#clouds").on("click", ".cloud", function(){
+  
+  // get information from cloud
+  let index = $(this).attr("index");
+  let symbol = $(this).find(".emoji").text();
+  let msg = $(this).find("p").text();
+  
+  $("#look .cloud .emoji").text(symbol);
+  $("#look .cloud p").text(msg);
+  
+  $("#look").show();
+  
+  // also, mark that cloud as seen
+  $("#clouds .cloud[index='" + index +"']").attr("seen", "");
+  
+});
+
+// hide when button is clicked
+$("#look").on("click", "button[hide]", function(){
+  $("#look").hide();
+});
+  </script>
+</html>

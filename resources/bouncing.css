@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+}
+
+img:hover {
+  position: fixed;
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 150px;
+  }
+}
+
+html {
+  background-color: black;
+  color: #ea33d5;
+  animation: color 15s infinite;
+  font-family: 'Major Mono Display', monospace;
+}
+
+@font-face {
+  font-family: "Dumpling";
+  src: url(./DTDumplingDisplay-Regular.otf);
+}
+
+a {
+  text-decoration: none;
+  animation: text 15s infinite;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#title {
+  position: fixed;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  margin-top: 20rem;
+  line-height: 5rem;
+}
+
+h1 {
+  font-family: "Dumpling", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+h4 {
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  animation: text 15s infinite;
+}
+
+p {
+  color: white;
+}
+
+.def, .bottom-def {
+  font-style: italic;
+}
+
+#intro p{
+  text-align: center;
+  font-size: .8rem;
+  top: 1rem;
+  position: fixed;
+  display: block;
+  width: 100%;
+  letter-spacing: .05rem;
+  text-transform: lowercase;
+}
+
+#def-bottom p {
+  text-align: center;
+  font-size: .8rem;
+  bottom: 1rem;
+  position: fixed;
+  display: block;
+  width: 100%;
+  letter-spacing: .05rem;
+  text-transform: lowercase;
+}
+
+.bottom-def a{
+  color: magenta;
+}
+
+.shape {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  color: magenta;
+}
+
+.yes:hover {
+  transform: rotate(-20deg);
+}
+
+ {
+  background-color: magenta;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid magenta;
+  border-radius: 50%;
+}
+

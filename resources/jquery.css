@@ -1,0 +1,197 @@
+html {
+    background: #ec9d37;
+    color: #ea33d5;
+    animation: color 15s infinite;
+    font-family: 'Major Mono Display', monospace;
+}
+
+@font-face {
+    font-family: "Dumpling";
+    src: url(./DTDumplingDisplay-Regular.otf);
+}
+
+a {
+    text-decoration: none;
+    animation: text 15s infinite;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#title {
+    position: fixed;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+    line-height: 1rem;
+}
+
+h1 {
+    font-family: "Dumpling", Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    letter-spacing: 2rem;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+h4 {
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    animation: text 15s infinite;
+}
+
+p {
+    color: white;
+}
+
+.def, .bottom-def {
+    font-style: italic;
+}
+
+#intro p{
+    text-align: center;
+    font-size: .8rem;
+    top: 1rem;
+    position: fixed;
+    display: block;
+    width: 100%;
+    letter-spacing: .05rem;
+    text-transform: lowercase;
+}
+
+#def-bottom p {
+    text-align: center;
+    font-size: .8rem;
+    bottom: 1rem;
+    position: fixed;
+    display: block;
+    width: 100%;
+    letter-spacing: .05rem;
+    text-transform: lowercase;
+}
+
+#button{
+    background-color: rgba(0,0,0,0.0);
+    font-size: 2rem;
+    text-transform: lowercase;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2rem;
+    color: white;
+    margin-top: 13rem;
+    font-family: 'Major Mono Display', monospace;
+}
+
+#button:hover {
+    background-color: white;
+    animation: text 15s infinite;
+    cursor: pointer;
+}
+
+#button:visited {
+    background-color: white;
+}
+
+#button:active {
+    background-color: rgba(0,0,0,0.5);
+    animation: none;
+}
+
+#buffy img {
+    display: block;
+    position: absolute;
+    left: 7rem;
+    top: 2rem;
+    height: 17rem;
+    width: auto;
+    z-index: 1;
+}
+
+.img2 img {
+    display: block;
+    position: absolute;
+    right: 10rem;
+    top: 20rem;
+    height: 13rem;
+    width: auto;
+    z-index: 1;
+}
+
+.hidden img {
+    height: 13rem;
+    width: auto;
+    z-index: 1;
+    right: 5;
+    top: 30rem;
+}
+
+#img3 img {
+    position: absolute;
+    display: block;
+    right: 40rem;
+    top: 130rem;
+    height: 13rem;
+    width: auto;
+    z-index: 1;
+}
+
+#img4 img {
+    position: absolute;
+    display: block;
+    left: 20rem;
+    top: 50rem;
+    height: 17rem;
+    width: auto;
+    z-index: 0;
+}
+
+#img5 img {
+    position: absolute;
+    display: block;
+    right: 12rem;
+    top: 80rem;
+    height: 17rem;
+    width: auto;
+    z-index: 1;
+}
+
+#img6 img {
+    position: absolute;
+    display: block;
+    right: 30rem;
+    top: 35rem;
+    height: 17rem;
+    width: auto;
+    z-index: 1;
+}
+
+#img7 img {
+    position: absolute;
+    display: block;
+    left: 13rem;
+    top: 90rem;
+    height: 17rem;
+    width: auto;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+@keyframes color {
+    0%   { background-color: #ec9d37; }
+    50%  { background-color: #022d06; }
+    100% { background-color: #ec9d37; }
+  }
+
+  @keyframes text {
+    0%   { color: #ea33d5; }
+    50%  { color: #f4c0ff; }
+    100% { color: #ea33ea; }
+  }
