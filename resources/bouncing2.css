@@ -43,8 +43,8 @@
   }
   
   a {
-    text-decoration: none;
-    animation: text 15s infinite;
+    text-decoration: underline;
+    color: black;
   }
   
   a:hover {
@@ -109,9 +109,6 @@
     text-transform: lowercase;
   }
   
-  .bottom-def a{
-    color: rgb(122, 228, 255);
-  }
   
   .shape {
     height: 4rem;
@@ -152,6 +149,7 @@
     letter-spacing: .2rem;
     text-align: center;
     color: black;
+    font-style: normal;
   }
 }
   
