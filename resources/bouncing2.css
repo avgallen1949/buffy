@@ -52,13 +52,13 @@
   }
   
   #title {
-    position: fixed;
-    display: block;
-    margin: auto;
+   position: absolute;
+   top: 40%;
+   margin-top: -50px;
     text-align: center;
-    width: 100%;
-    margin-top: 22rem;
     line-height: 3rem;
+    margin: auto;
+    width: 100%;
   }
   
   h1 {
@@ -138,4 +138,20 @@
     mix-blend-mode:exclusion;
   }
 
+  /* smartphone */
+@media only screen and (max-width: 480px), (orientation: portrait) {
+  h1 {
+    font-family: "Kadabra";
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    text-align: center;
+    color: black;
+  }
+}
   
