@@ -74,7 +74,8 @@ p {
     #title {
       position: absolute;
        text-align: center;
-  
+      top: 10%;
+      margin-bottom: 1rem;
      }
 
   }
