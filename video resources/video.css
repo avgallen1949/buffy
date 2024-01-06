@@ -16,18 +16,27 @@ div.sticky {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 2;
+}
+
+div.sticky4 {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
 .sticky2 {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 45vh;
+    z-index: 2;
 }
 
 .sticky3 {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 10vh;
+    z-index: 2;
 }
 
 .sticky3 p {
@@ -35,6 +44,18 @@ div.sticky {
     margin: 0 2rem;
     color: white;
     top: 0;
+}
+
+.scroll p{
+    position: fixed;
+    top: 1rem;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    z-index: 1;
 }
 
 p {
