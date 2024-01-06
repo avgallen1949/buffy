@@ -19,13 +19,13 @@
     overflow: hidden;
   }
   
-  img {
+  img{
     position: absolute;
-    width: 200px;
+    height: 200px;
     z-index: 1;
   }
   
-  img:hover {
+  img:hover{
     position: fixed;
   }
   
@@ -50,6 +50,7 @@
   a:hover {
     text-decoration: underline;
   }
+
   
   #title {
    position: absolute;
@@ -108,31 +109,15 @@
     letter-spacing: .05rem;
     text-transform: lowercase;
   }
-  
-  
-  .shape {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    color: magenta;
-  }
+
   
   .yes:hover {
     transform: rotate(-20deg);
   }
   
-   {
-    background-color: magenta;
-    height: 2rem;
-    width: 2rem;
-    border: 1px solid magenta;
-    border-radius: 50%;
-  }
-
   .dot {
     height: 3rem;
     width: 3rem;
-    mix-blend-mode:exclusion;
   }
 
   /* smartphone */
