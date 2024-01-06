@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+}
+
+video {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    margin: 0;
+    background-color: black;
+    top: 0;
+    object-fit: cover;
+}
+
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.sticky2 {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 45vh;
+}
+
+.sticky3 {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 10vh;
+}
+
+p {
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    z-index: 1;
+    text-align: center;
+    height: 100vh;
+    margin-top: 50vh;
+    padding-top: 1rem;
+    -webkit-text-stroke: .5px black;
+    margin: 1rem;
+}
+
+.black {
+    height: 100vh;
+    background-color: black;
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+  /* smartphone */
+  @media only screen and (max-width: 480px), (orientation: portrait) {
+    p {
+      font-size: 1rem;
+      margin: 2rem;
+    }
+  }
