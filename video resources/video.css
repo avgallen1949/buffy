@@ -30,6 +30,11 @@ div.sticky {
     top: 10vh;
 }
 
+.sticky3 p {
+    text-align: left; 
+    margin-left: 25vw;
+}
+
 p {
     color: yellow;
     font-family: Arial, Helvetica, sans-serif;
@@ -46,8 +51,8 @@ p {
 .black {
     height: 100vh;
     background-color: black;
-    margin: auto;
-    width: 100%;
+    margin: 0;
+    width: 100vw;
     object-fit: cover;
 }
 
