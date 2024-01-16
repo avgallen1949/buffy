@@ -1,3 +1,5 @@
+//this code was adapted from Yale's Night school homepage + various Youtube tutorials on bouncing DVD screen in JS
+
 const items = document.querySelectorAll("img");
 const circles = document.getElementsByClassName("circles");
 const defaultSpeed = 4;
